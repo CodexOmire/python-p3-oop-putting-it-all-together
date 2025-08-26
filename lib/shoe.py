@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 class Shoe:
-    def __init__(self, brand = "Adidas", size = 9):
+    def __init__(self, brand, size, condition = "New):
         self.brand = brand
         self.size = size
-        self.condition = None
+        self.condition = condition
 
     @property
     def size(self):
@@ -18,5 +18,4 @@ class Shoe:
             self._size = value
 
     def cobble(self):
-        self.condition = "New"
         print("Your shoe is as good as new!")
